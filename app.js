@@ -23,12 +23,37 @@ while (counter <= 5) {
   counter++;
 }
 
-let keepLooping = true;
+// let keepLooping = true;
+// let i = 0;
+
+// while (keepLooping === true) {
+//   console.log("Iteration", i);
+//   keepLooping = Math.random() < 0.1;
+//   i++;
+// }
+
+const favFood = ["cheesy garlic bread", "malteasers", "cheesecake"];
+
+for (let i = 0; i < favFood.length; i++) {
+  console.log(favFood[i]);
+}
+
+const favAnimals = ["tiger", "dog", "elephant", "bear", "red panda"];
+
+for (let animal of favAnimals) {
+  console.log(animal);
+}
+
+const favColours = ["orange", "red", "pink", "coral"];
+
+favColours.forEach(function (oneColour) {
+  console.log(oneColour);
+});
+
+const favNumbers = [4, 7, 9];
 let i = 0;
 
-while (keepLooping === true) {
-  console.log("Iteration", i);
-
-  keepLooping = Math.random() < 0.1;
+while (i < favNumbers.length) {
+  console.log(favNumbers[i]);
   i++;
 }
